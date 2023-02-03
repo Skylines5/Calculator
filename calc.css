@@ -1,0 +1,52 @@
+
+.calc-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.op-container {
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+
+.prev-op {
+    font-size: large;
+    margin-left: .3vw;
+}
+
+.current-op {
+    font-size: xx-large;
+    margin-left: .3vw;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    background-color: lightgray;
+    color: black;
+}
+
+
+/* Grid is set up here */
+.buttons {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.equalsBtn{
+    grid-row: span 2;
+}
+
+#zero-btn {
+    grid-column: span 2;
+}
